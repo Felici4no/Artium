@@ -8,7 +8,7 @@ header {
     background-color: #333; 
     background-image: 
         linear-gradient(rgba(255, 105, 180, 0.5), rgba(65, 105, 225, 0.5)), 
-        url('../src/obras/O\ NASCIMENTO\ DE\ VÊNUS.jpg'); /* Degradê moderno sobre a imagem */
+        url('../src/obras/A\ PERSISTÊNCIA\ DA\ MEMÓRIA.jpg'); /* Degradê moderno sobre a imagem */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -19,6 +19,9 @@ header {
 header h1 {
     margin: 0;
     font-size: 2.5em;
+}
+header h1 img {
+    width: 250px;
 }
 nav {
     margin: 20px 0;
@@ -69,20 +72,58 @@ nav a:hover {
     display: block;
 }
 .gallery-item:hover {
-    transform: scale(1.05);
+    transform: scale(1.10);
 }
 .gallery-item h3 {
     padding: 15px;
     font-size: 1.2em;
     text-align: center;
 }
+
+/* Estilos do Modal (escondido por padrão) */
+.modal {
+    display: none; /* Escondido por padrão */
+    position: fixed; /* Fixa na tela */
+    z-index: 1; /* Fica à frente do conteúdo */
+    left: 0;
+    top: 0;
+    width: 100%; /* Largura total */
+    height: 100%; /* Altura total */
+    background-color: rgba(0, 0, 0, 0.4); /* Fundo escurecido */
+}
+/* Conteúdo do modal */
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+/* Botão de fechar */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
 footer {
-    background-image: 
-        linear-gradient(rgba(255, 105, 180, 0.5), rgba(65, 105, 225, 0.5)), 
-        url('../src/obras/O\ NASCIMENTO\ DE\ VÊNUS.jpg');
+    background-image: linear-gradient(rgba(255, 105, 180, 0.5), rgba(65, 105, 225, 0.5)), url('../src/obras/O\ NASCIMENTO\ DE\ VÊNUS.jpg');
     text-align: center;
     padding: 20px;
     background-color: #333;
     color: white;
     margin-top: 20px;
+}
+
+footer img{
+    width: 150px;
 }

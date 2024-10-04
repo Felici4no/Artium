@@ -4,22 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/style.css">
-    <title>Artium</title>
-</head>
-<body>
-    
-</body>
-</html><!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Artium - Digital Art Gallery</title>
 </head>
 <body>
     <header>
-        <h1>Artium</h1>
+        <h1><img src="src/logo/Artium (1).png" alt="logo"></h1>
         <p>Explore a world of digital art</p>
+
     </header>
     
     <nav>
@@ -27,6 +18,8 @@
         <a href="#gallery">Gallery</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
+        <button id="createImageBtn1">Criar Imagem 1</button>
+        <button id="createImageBtn2">Criar Imagem 2</button>
     </nav>
 
     <section id="gallery" class="gallery">
@@ -50,8 +43,20 @@
         </div>
     </section>
 
+        <!-- Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modalTitle">Título do Modal</h2>
+            <p id="modalDescription">Descrição do Modal</p>
+            <div id="imageContainer"></div> <!-- Aqui a imagem será adicionada -->
+        </div>
+    </div>
+
     <footer>
         <p>&copy; 2024 Artium. All rights reserved.</p>
+        <p><img src="src/logo/Artium (1).png" alt="logo-footer"></p>
     </footer>
+    <script src="src/functions.js"></script>
 </body>
 </html>
