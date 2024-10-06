@@ -42,7 +42,7 @@ createImageBtn2.onclick = function() {
     openModal(
         'Imagem 2 Criada!',
         'Esta é a descrição da imagem 2.',
-        'https://via.placeholder.com/400x300?text=Imagem+2'
+        'src/obras/ABAPORU.jpg'
     );
 }
 
