@@ -7,13 +7,15 @@
     --gradient-color2: rgba(65, 105, 225, 0.5);
     --font-family: Arial, sans-serif;
     --transition-duration: 0.3s;
-    --header-height: 700px;
+    --header-height: 100vh;
     --modal-width: 80%;
     --modal-max-width: 500px;
 }
 
 /* Global Settings */
 * {
+    margin: 0;
+    padding: 0;
     scroll-behavior: smooth;
 }
 
@@ -26,6 +28,7 @@ body {
 }
 
 header {
+    transition: 1s;
     background-color: var(--primary-color);
     background-image: 
         linear-gradient(rgb(255, 105, 180), var(--gradient-color2)), 
@@ -43,13 +46,14 @@ header {
     flex-direction: column; 
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
-}
-
 header h1 img {
-    width: 250px;
+    transition: 0.5s;
+    width: 45vh;
+    animation: slowAnimation 1s ease-in-out;
+}
+header h1 img:hover {
+    width: 50vh;
+    
 }
 section{
     text-align: center;
@@ -70,6 +74,7 @@ section{
     width: 200px;
     background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
 }
 
 .artists img {
@@ -127,6 +132,7 @@ nav a:hover {
 
 /* Gallery Styles */
 .gallery {
+    
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 0.5px;
@@ -159,6 +165,16 @@ nav a:hover {
     font-size: 1.2em;
     text-align: center;
 }
+/*Animation*/
+@keyframes slowAnimation {
+    0% {
+      transform: scale(1.5);
+      opacity: 1%;
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
 
 /* Modal Styles */
 .modal {
