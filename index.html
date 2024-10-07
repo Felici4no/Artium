@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/style.css">
+    <link rel="icon" type="image/x-icon" href="src/logo/Artium (5).png">
     <title>Artium - Digital Art Gallery</title>
 </head>
 <body>
     <header>
         <h1><img src="src/logo/Artium (2).png" alt="logo"><img src="src/logo/Artium (2).png" alt="logo"></h1>
-        <p>Explore a world of digital art</p>
-        
         <!--
         <hr>
         <button id="createImageBtn1">Criar Imagem 1</button>
@@ -19,11 +18,30 @@
     </header>
     
     <nav>
-        <a href="#home">Home</a>
+        <a href="#">Home</a>
         <a href="#gallery">Gallery</a>
-        <a href="#about">About</a>
-        <a href="#">Login</a>
+        <a href="#artists">Artists</a>
+        <a href="#">Forum</a>
     </nav>
+    <section id="artists">
+        <h1>Mais vistos</h1>
+        <div id="artist_destaque">
+            
+            <div class="artists">
+                <img src="src/artists/Vincent_van_Gogh.jpg" alt="Vincent van Gogh">
+                <p>Vincent Van Gogh</p>
+            </div>
+            <div class="artists">
+                <img src="src/artists/TarsilaDoAmaral.jpg" alt="Tarsila Do Amaral">
+                <p>Tarsila do Amaral</p>
+            </div>
+
+            <div class="artists">
+                <img src="src/artists/Leonardo da Vinci.jpg" alt="Leonardo da Vinci">
+                <p>Leonardo da Vinci</p>
+            </div>
+        </div>
+    </section>
 
     <section id="gallery" class="gallery">
         <div class="gallery-item">
@@ -43,7 +61,7 @@
         </div>
         <div class="gallery-item">
             <img src="src/obras/MONA LISA.jpg" alt="MONA LISA - LEONARDO DA VINCI">
-        </div>  
+        </div> 
     </section>
     
 
@@ -63,6 +81,7 @@
     <footer>
         <p>&copy; 2024 Artium. All rights reserved.</p>
         <p><img src="src/logo/Artium (1).png" alt="logo-footer"></p>
+        
     </footer>
     <script src="src/functions.js"></script>
 </body>
